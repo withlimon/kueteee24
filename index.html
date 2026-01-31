@@ -33,6 +33,8 @@
     .navbar {
       text-align: center;
       float: center;
+      max-width:500px;
+      margin:auto;
     }
     .navbar a {
       color: skyblue;
@@ -41,6 +43,49 @@
     a {
       text-decoration: none;
     }
+    /* Base: Mobile Light Mode */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #ffffff;
+  color: #1e293b;  /* dark text */
+  line-height: 1.6;
+}
+
+h1 { font-size: 2rem; font-weight: 700; }
+h2 { font-size: 1.75rem; font-weight: 600; }
+h3 { font-size: 1.25rem; font-weight: 600; }
+h4 { font-size: 1.1rem; font-weight: 500; color: #334155; }
+h5 { font-size: 1rem; font-weight: 500; }
+h6 { font-size: 0.9rem; font-weight: 500; }
+b,strong { font-size: 0.95rem; font-weight: 600; }
+i,em { font-size: 0.95rem; font-weight: 400; }
+a { color: #1d4ed8; }  /* blue links */
+    
+    /* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #020617; /* almost black */
+    color: #e5e7eb;  /* soft white */
+  }
+
+  /* Headings */
+  h1,h2,h3,h5,h6 { color: #f1f5f9; }
+  h4 { color: #cbd5f5; } /* slightly bluish subheading */
+
+  /* Bold/Italic */
+  b,strong { color: #f1f5f9; }
+  i,em { color: #e5e7eb; }
+
+  /* Links */
+  a { color: #7dd3fc; text-decoration: underline; }
+
+  /* Cards, tables, nav */
+  .card, table, nav {
+    background-color: #0f172a;
+    border-color: #334155;
+  }
+}
+    
   </style>
   <h1 class="title">KUET EEE'24</h1>
   <h4 class="navbar">Home |
